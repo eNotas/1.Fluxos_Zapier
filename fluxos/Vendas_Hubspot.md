@@ -2,7 +2,7 @@
 
 Este bloco contem os fluxos que envolvem origem ou destino no Hubspot.
 
-[TOC]
+![TOC]
 
 ### 1. [Comercial] Auxiliar na automação do fluxo Novo usuário - criar linha em planilha quando deal muda para Aceite Verbal
 
@@ -27,7 +27,7 @@ Este é um dos fluxos que serão interrompidos caso o campo **CNPJ Busca no Pipe
 
 
 
-![](G:\Drives compartilhados\DADOS E PERFOMANCE\DADOS E PERFOMANCE\2021\Repositorio_Github\1.Fluxos_Zapier\imagens\Fluxo_1-2.jpg)
+![Fluxo_1-2](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_1-2.jpg)
 
 
 
