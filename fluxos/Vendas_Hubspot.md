@@ -66,7 +66,7 @@ Os Campos de interesse são:
 
 As informações do cliente são enviadas para o pipe: **eNotas - [Financeiro] Upgrade / Downgrade** e então um novo card é criado.
 
-![Fluxo_7](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_7.jpg) <- Corrigir a imagem.
+![Fluxo_7](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_7.jpg)
 
 
 
