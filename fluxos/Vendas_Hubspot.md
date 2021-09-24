@@ -87,3 +87,44 @@ A cada card movido no pipe: **eNotas - [Financeiro] Alteração de dados/plano/f
 
 ![Fluxo_9](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_9.jpg) 
 
+### 	9. **[Suporte/Financeiro] Renegociação/Casos atípicos > Hubspot Renegociação/Casos atípicos**
+
+A cada card movido no pipe: **eNotas - [Suporte / Financeiro] Renegociação / casos atípicos GW/Emissor Business** o fluxo é disparado. Caso a fase atual seja diferente de "Hubspot", o fluxo será interrompido.
+
+O Fluxo cria ou atualiza contato no Hubspot preenchendo os seguintes campos:
+
+- email da empresa já cadastrada;
+- Cargo do contato;
+- Pessoa do contato;
+- Telefone;
+- Lifecycle stage;
+- Razão social da empresa já cadastrada.
+
+Em seguida cria um negócio a partir do contato criado na etapa anterior e cria uma associação destes. Por fim uma notificação é enviada ao slack no canal: **renegociaçõeshubspot**
+
+![Fluxo_10](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_10.jpg) 
+
+### 10. **[Comercial] Cliente ganho Hubspot (Renegociação Pipeline) > Suporte**
+
+A cada novo negócio do pipeline **Renegociação/Casos atípicos** em estágio "**Negócio Ganho**" um email é enviado para "suporte@enotas.com.br".
+
+![Fluxo_13](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_13.jpg) 
+
+### 11. **Enviar novos contatos Call Page para o Hubspot (new call)**
+
+A cada evento "nova ligação" no Callpage cria um contato no Hubspot.
+
+![Fluxo_14](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_14.jpg)
+
+### 12. **Pipefy (Checklist Onboarding) > Hubspot PRINCIPAL - Novo Usuário**
+
+A cada novo card no pipe: **eNotas - Não usar [Comercial] Auxiliar Checklist Onboarding** o fluxo é disparado. O fluxo procura o deal ID no Hubspot e atualiza o negócio com as informações caso encontrado.
+
+![Fluxo_27](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_27.jpg)
+
+### 13. Pipefy (Checklist Onboarding) > Hubspot PRINCIPAL - Renegociação
+
+A cada novo card no pipe: **eNotas - Não usar [Comercial] Auxiliar Checklist Onboarding** o fluxo é disparado. O fluxo procura o deal ID no Hubspot e atualiza o negócio com as informações caso encontrado.
+
+![Fluxo_33](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_33.jpg)
+
