@@ -68,7 +68,22 @@ As informações do cliente são enviadas para o pipe: **eNotas - [Financeiro] U
 
 ![Fluxo_7](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_7.jpg)
 
+### 7. [Comercial] Cliente ganho Hubspot (Sales Pipeline) > Cria card [Financeiro] Novo Usuário Migração de produto/Cross sell/Segunda conta
 
+A cada novo negócio no pipeline **renegociação / casos atípicos** com estágio **"negócio ganho"** este fluxo será disparado. Em seguida será aplicado um filtro: caso o campo "Ação Renegociação / Casos atípicos" for diferente de **"Migração de produto"** ou **"Cross sell"** ou **"Segunda conta GW/Emissor Business"** o fluxo será interrompido.
 
+Os Campos de interesse são:
 
+* Valor CNPJ excedente - Ajuste Comercial;
+* Valor nota excedente - Ajuste Comercial.
+
+As informações do cliente são enviadas para o pipe: **eNotas - [Financeiro] Novo usuário** e então um novo card é criado.
+
+![Fluxo_8](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_8.jpg) 
+
+### 8. **[Financeiro] Alteração dados cadastrais > Hubspot Jurídico**
+
+A cada card movido no pipe: **eNotas - [Financeiro] Alteração de dados/plano/faturamento ou importação de vendas**, o fluxo cria associação do contato criado ou atualizado ao negócio no Hubspot. Caso a fase atual seja diferente de **"cadastrados"** e o campo "Necessita de revisão do Contrato" for diferente de **"sim"**, o fluxo será interrompido.
+
+![Fluxo_9](https://github.com/eNotas/1.Fluxos_Zapier/blob/main/imagens/Fluxo_9.jpg) 
 
